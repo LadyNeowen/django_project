@@ -23,9 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xx#zw99vps*$k4b^ij98mu6jqk-&uv2qtt8x7-os_53))2d#m!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# Enable DEBUG for local development. Remember to set this to False in production.
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# Allow localhost and 127.0.0.1 during development. Remove or tighten in production.
+ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
